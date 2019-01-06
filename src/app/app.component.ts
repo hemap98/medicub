@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'medcube3';
+
+  setProductList(product: any) {
+    alert(JSON.stringify(product));
+  }
 }

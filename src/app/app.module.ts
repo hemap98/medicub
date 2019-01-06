@@ -12,6 +12,8 @@ import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { KartService } from './kart-service.service';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,7 @@ import { FooterComponent } from './footer/footer.component';
     // AppRoutingModule
     RouterModule.forRoot(AppRoutes),
   ],
-  providers: [],
+  providers: [KartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

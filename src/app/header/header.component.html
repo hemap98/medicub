@@ -18,7 +18,7 @@
       <li class="nav-item dropdown">
         <a class="nav-link text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PERSONAL CARE</a>
         <div class="dropdown-content">
-            <a href="#">Link 1</a>
+            <a [routerLink]="['/item-list']">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
           </div>
@@ -49,7 +49,11 @@
       </li>
     </ul>
     <!-- <li class="nav-item"> -->
-        <a class="text-white" [routerLink]="['/cart']"><i class="fa fa-shopping-cart icon-white" aria-hidden="true"></i></a>
+        <a class="text-white" [routerLink]="['/cart']">
+          <i class="fa fa-shopping-cart icon-white" aria-hidden="true">
+            <span *ngIf="kartCount > 0" class="badge">{{kartCount}}</span>
+          </i>
+        </a>
         &nbsp;&nbsp;&nbsp;
       <a class="text-white" [routerLink]="['/login']"><i class="fa fa-sign-out icon-white" aria-hidden="true"></i></a>
     <!-- </li> -->

@@ -4,6 +4,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
+import { ItemListComponent } from './item-list/item-list.component';
 
 export const AppRoutes: Routes = [
     {path: '',redirectTo: 'login', pathMatch: 'full'},
@@ -11,4 +12,5 @@ export const AppRoutes: Routes = [
     {path: 'login', component:LoginComponent},
     {path: 'signup', component:SignupComponent},
     {path: 'cart', component:CartComponent},
+    {path: 'item-list', component:ItemListComponent},
 ]

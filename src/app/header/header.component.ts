@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { KartService } from '../kart-service.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  kartCount: number = 0;
+  constructor(private kartService: KartService) {
+    kartService.countEmitter.subscribe(count => this.setCount(count));
+   }
 
   ngOnInit() {
+  }
+
+  setCount(count: number) {
+    debugger
+    this.kartCount = count;
   }
 
 }
