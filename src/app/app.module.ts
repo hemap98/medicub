@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule, FormBuilder } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +15,7 @@ import { CartComponent } from './cart/cart.component';
 import { ItemListComponent } from './item-list/item-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { KartService } from './kart-service.service';
+import { ApiService } from './api.service';
 
 
 @NgModule({
@@ -30,8 +33,11 @@ import { KartService } from './kart-service.service';
     BrowserModule,
     // AppRoutingModule
     RouterModule.forRoot(AppRoutes),
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [KartService],
+  providers: [KartService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
