@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { CartComponent } from './cart/cart.component';
 import { ItemListComponent } from './item-list/item-list.component';
+import { AddItemListComponent } from './add-item-list/add-item-list.component';
 
 export const AppRoutes: Routes = [
     {path: '',redirectTo: 'login', pathMatch: 'full'},
@@ -13,4 +14,5 @@ export const AppRoutes: Routes = [
     {path: 'signup', component:SignupComponent},
     {path: 'cart', component:CartComponent},
     {path: 'item-list', component:ItemListComponent},
+    {path: 'add-item-list', component:AddItemListComponent},
 ]

@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="form_bg">
+      <form [formGroup]="itemForm">
+        <h2 class="text-center">Product List</h2>
+
+        <br/>
+        <div class="form-group">
+          <input formControlName="productImage" type="file" class="form-control" id="productImage" placeholder="Product Image">
+        </div>
+        <div class="form-group">
+          <input formControlName="productName" type="text" class="form-control" id="productName" placeholder="Product Name">
+        </div>
+        <div class="form-group">
+          <input formControlName="price" type="text" class="form-control" id="price" placeholder="Price">
+        </div>
+        <div class="form-group">
+          <input formControlName="category" type="text" class="form-control" id="category" placeholder="Category">
+        </div>
+        <div class="form-group">
+          <input formControlName="description" type="text" class="form-control" id="description" placeholder="Description">
+        </div>
+        <div class="form-group">
+          <input formControlName="expDate" type="text" class="form-control" id="expDate" placeholder="Exp Date">
+        </div>
+        <div class="form-group">
+            <select class="form-control">
+              <option>Prescription</option>
+              <option>No Prescription</option>
+          </select> 
+        </div>
+        <br/>
+      </form>
+    </div>
+  </div>
+</div>

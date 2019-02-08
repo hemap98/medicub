@@ -16,6 +16,7 @@ import { ItemListComponent } from './item-list/item-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { KartService } from './kart-service.service';
 import { ApiService } from './api.service';
+import { AddItemListComponent } from './add-item-list/add-item-list.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ApiService } from './api.service';
     HomeComponent,
     CartComponent,
     ItemListComponent,
-    FooterComponent
+    FooterComponent,
+    AddItemListComponent
   ],
   imports: [
     BrowserModule,
